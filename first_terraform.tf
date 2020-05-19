@@ -9,8 +9,8 @@ resource "fastly_service_v1" "first_terraform_service" {
   name = "My First Terraform Service"
 
   domain {
-    name    = "demo.notexample.com"
-    comment = "demo"
+    name    = "terraform.lbfastly.com"
+    comment = "Terraform demo"
   }
 
   backend {

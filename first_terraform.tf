@@ -3,10 +3,15 @@ provider "fastly" {
   api_key = "DjFKLv35tPR5fdq1uDTIZZnus1o_013t"
 }
 
+# output varialbles on the console
+output "Fastly-Version" {
+  value = "${fastly_service_v1.fastly-terraform-demo.active_version}"
+}
+
 # Create a Service
 
 resource "fastly_service_v1" "first_terraform_service" {
-  name = "My First Terraform Service"
+  name = "First Fastly Terraform Service"
 
   domain {
     name    = "terraform.lbfastly.com"

@@ -9,21 +9,21 @@ output "Fastly-Version" {
 
 # Create a Service
 
-resource "fastly_service_v1" "first_terraform_service" {
+resource "fastly_service_v1" "second_terraform_service" {
   name = "First Fastly Terraform Service"
 
   domain {
-    name    = "terraform.lbfastly.com"
+    name    = "terraform-second.lbfastly.com"
     comment = "Terraform demo"
   }
 
   domain {
-    name    = "terraform-2.lbfastly.com"
+    name    = "terraform-second-2.lbfastly.com"
     comment = "Terraform demo"
   }
 
   domain {
-    name    = "terraform-3.lbfastly.com"
+    name    = "terraform-second-3.lbfastly.com"
     comment = "Terraform demo"
   }
 

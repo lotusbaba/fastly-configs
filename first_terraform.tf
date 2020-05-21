@@ -27,6 +27,11 @@ resource "fastly_service_v1" "second_terraform_service" {
     comment = "Terraform demo"
   }
 
+  domain {
+    name    = "terraform-second-4.lbfastly.com"
+    comment = "Terraform demo"
+  }
+
   backend {
     address = "127.0.0.1"
     name    = "localhost"

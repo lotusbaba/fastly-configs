@@ -33,7 +33,7 @@ resource "fastly_service_v1" "second_terraform_service" {
   }
 
   domain {
-    name    = "terraform-second-5.lbfastly.com"
+    name    = "terraform-second-6.lbfastly.com"
     comment = "Terraform demo"
   }
 
